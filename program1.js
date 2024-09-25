@@ -1,38 +1,29 @@
 function isValid(s) {
-    
-    const stack = [];
-    
-    
-    const bracketMap = {
-        ')': '(',
-        '}': '{',
-        ']': '['
-    };
+  const stack = [];
 
-     
-    for (let i = 0; i < s.length; i++) {
-        const char = s[i];
+  const bracketMap = {
+    ")": "(",
+    "}": "{",
+    "]": "[",
+  };
 
-         
-        if (char in bracketMap) {
-            
-            const topElement = stack.length === 0 ? '#' : stack.pop();
+  for (let i = 0; i < s.length; i++) {
+    const char = s[i];
 
-           
-            if (topElement !== bracketMap[char]) {
-                return false;
-            }
-        } else {
-            
-            stack.push(char);
-        }
+    if (char in bracketMap) {
+      const topElement = stack.length === 0 ? "#" : stack.pop();
+
+      if (topElement !== bracketMap[char]) {
+        return false;
+      }
+    } else {
+      stack.push(char);
     }
+  }
 
-    
-    return stack.length === 0;
+  return stack.length === 0;
 }
 
- 
-console.log(isValid("()"));  
-console.log(isValid("()[]{}"));  
-console.log(isValid("(]")); 
+console.log(isValid("()"));
+console.log(isValid("()[]{}"));
+console.log(isValid("(]"));
