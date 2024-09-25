@@ -23,7 +23,7 @@ function isValid(s) {
                 return false;
             }
         } else {
-            // If it is an opening bracket, push it onto the stack
+            
             stack.push(char);
         }
     }
