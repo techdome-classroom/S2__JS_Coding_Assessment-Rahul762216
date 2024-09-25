@@ -15,9 +15,7 @@ function romanToInt(s) {
 
     // Iterate through each character in the string
     for (let i = 0; i < s.length; i++) {
-        const currentValue = romanMap[s[i]]; // Get the integer value of the current Roman numeral
-        
-        // If the previous numeral is smaller, subtract its value twice (because it was added once before)
+        const currentValue = romanMap[s[i]];  
         if (currentValue > prevValue) {
             total += currentValue - 2 * prevValue;
         } else {
