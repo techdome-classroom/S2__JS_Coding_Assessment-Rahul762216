@@ -34,7 +34,5 @@ function isValid(s) {
 
  
 console.log(isValid("()"));  
-console.log(isValid("()[]{}")); // Output: true
-
-// Example 3
+console.log(isValid("()[]{}"));  
 console.log(isValid("(]")); // Output: false
