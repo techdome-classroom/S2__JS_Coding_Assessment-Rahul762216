@@ -21,7 +21,7 @@ function romanToInt(s) {
         if (currentValue > prevValue) {
             total += currentValue - 2 * prevValue;
         } else {
-            total += currentValue; // Otherwise, just add the current value
+            total += currentValue;  
         }
  
         prevValue = currentValue;
