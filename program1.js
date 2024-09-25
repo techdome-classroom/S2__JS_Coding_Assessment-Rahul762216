@@ -9,7 +9,7 @@ function isValid(s) {
         ']': '['
     };
 
-    // Iterate through each character in the string
+     
     for (let i = 0; i < s.length; i++) {
         const char = s[i];
 
