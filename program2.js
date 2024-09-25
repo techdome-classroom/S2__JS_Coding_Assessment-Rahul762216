@@ -23,8 +23,7 @@ function romanToInt(s) {
         } else {
             total += currentValue; // Otherwise, just add the current value
         }
-
-        // Update the previous value to the current one
+ 
         prevValue = currentValue;
     }
 
