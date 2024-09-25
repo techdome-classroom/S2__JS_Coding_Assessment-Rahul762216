@@ -2,7 +2,7 @@ function isValid(s) {
     
     const stack = [];
     
-    // Map for closing brackets and their corresponding opening brackets
+    
     const bracketMap = {
         ')': '(',
         '}': '{',
