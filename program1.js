@@ -13,7 +13,7 @@ function isValid(s) {
     for (let i = 0; i < s.length; i++) {
         const char = s[i];
 
-        // If it is a closing bracket
+         
         if (char in bracketMap) {
             // Pop from stack, if stack is empty use a dummy value '#'
             const topElement = stack.length === 0 ? '#' : stack.pop();
