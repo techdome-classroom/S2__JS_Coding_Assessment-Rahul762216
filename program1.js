@@ -32,7 +32,7 @@ function isValid(s) {
     return stack.length === 0;
 }
 
-// Example 1
+ 
 console.log(isValid("()")); // Output: true
 
 // Example 2
