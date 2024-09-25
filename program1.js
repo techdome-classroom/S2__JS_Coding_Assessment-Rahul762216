@@ -28,7 +28,7 @@ function isValid(s) {
         }
     }
 
-    // The string is valid if the stack is empty at the end
+    
     return stack.length === 0;
 }
 
