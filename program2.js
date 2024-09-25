@@ -32,9 +32,7 @@ function romanToInt(s) {
 }
 
 // Example 1
-console.log(romanToInt("III")); // Output: 3
-
-// Example 2
+console.log(romanToInt("III"));  
 console.log(romanToInt("LVIII")); // Output: 58
 
 // Example 3
