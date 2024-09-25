@@ -1,5 +1,5 @@
 function isValid(s) {
-    // Stack to keep track of opening brackets
+    
     const stack = [];
     
     // Map for closing brackets and their corresponding opening brackets
